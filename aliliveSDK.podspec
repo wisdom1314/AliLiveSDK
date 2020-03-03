@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "for flutter"
+  spec.description  = "for flutter iOS aliliveSDK "
 
   spec.homepage     = "https://github.com/wisdom1314/AliLiveSDK"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -38,7 +38,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.license      = "MIT (example)"
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,8 +89,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "AliLiveSDK", "AliLiveSDK/**/*.{h,m}"
-  spec.exclude_files = "AliLiveSDK/Exclude"
+  # spec.source_files  = "aliliveSDK"
+  # spec.exclude_files = "aliliveSDK/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -116,10 +116,10 @@ Pod::Spec.new do |spec|
   #
 
   # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
+  spec.frameworks = "AliThirdparty", "AlivcLibBeauty","AlivcLibFace","AlivcLibRtmp","AlivcLivePusher","AliyunPlayerSDK"
 
   # spec.library   = "iconv"
-  # spec.libraries = "iconv", "xml2"
+  spec.libraries = "AlivcLibFaceResource", "AliyunLanguageSource"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
