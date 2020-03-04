@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/wisdom1314/AliLiveSDK.git", :tag => "0.0.1" }
+  spec.source       = { :git => "https://github.com/wisdom1314/AliLiveSDK.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -104,7 +104,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
+  spec.resources = "AliLiveSDK/*.bundle"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -123,8 +123,8 @@ Pod::Spec.new do |spec|
 
   spec.vendored_frameworks = 'AliLiveSDK/AlivcLibRtmp.framework','AliLiveSDK/AlivcLivePusher.framework','AliLiveSDK/AliThirdparty.framework','AliLiveSDK/AlivcLibFace.framework','AliLiveSDK/AlivcLibBeauty.framework','AliLiveSDK/AliyunPlayerSDK.framework'
   
-  spec.resources = 'AliLiveSDK/AlivcLibFaceResource.bundle", "AliLiveSDK/AliyunLanguageSource.bundle'
 
+  spec.xcconfig = { "ENABLE_BITCODE" => "NO" }
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
